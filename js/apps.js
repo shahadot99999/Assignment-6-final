@@ -131,6 +131,7 @@ const loadModal =async (news_id) =>{
 
  // set toggleSpinner 
 
+ 
 const toggleSpinner = isLoading =>{
     const loaderSection = document.getElementById('loader');
     if(isLoading){
