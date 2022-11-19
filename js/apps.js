@@ -128,3 +128,15 @@ const loadModal =async (news_id) =>{
     }
     
  }
+
+ // set toggleSpinner 
+
+const toggleSpinner = isLoading =>{
+    const loaderSection = document.getElementById('loader');
+    if(isLoading){
+        loaderSection.classList.remove('d-none')
+    }
+    else(
+        loaderSection.classList.add('d-none')
+    )
+}
