@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center fs-1 fw-bold text-white p-5 bg-secondary">Blog Content</h1>
+    <hr>
+    <section>
+        <div class="table-responsive-sm container mt-5">
+            <table class="table table-bordered border-primary caption-top">
+                <caption>List of three difference(var,let,const)</caption>
+                <thead class="table-dark">
+                    <tr class="text-center">
+                        <th scope="col">Var</th>
+                        <th scope="col">Let</th>
+                        <th scope="col">Const</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>The scope of a var variable is functional scope.</td>
+                        <td>The scope of a let variable is block scope.</td>
+                        <td>The scope of a const variable is block scope.</td>
+                      </tr>
+                    <tr>
+                        <td>It can be updated and re-declared into the scope.</td>
+                        <td>It can be updated but cannot be re-declared into the scope.</td>
+                        <td>It cannot be updated or re-declared into the scope.</td>
+                      </tr>
+                    <tr>
+                        <td>It can be declared without initialization.</td>
+                        <td>It can be declared without initialization.</td>
+                        <td>It cannot be declared without initialization.</td>
+                      </tr>
+                  </tbody>
+              </table>
+        </div>
+        
+        <div class="table-responsive-sm container mt-5">
+            <table class="table table-bordered border-primary caption-top">
+                <caption>List of two difference arrow function and regular function</caption>
+                <thead class="table-dark">
+                    <tr class="text-center">
+                        <th scope="col">Arrow Function</th>
+                        <th scope="col">Regular Function</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>The behavior of this inside of an arrow function differs considerably from the regular function's this behavior.</td>
+                        <td>Inside of a regular JavaScript function, this value (aka the execution context) is dynamic.</td>
+                       
+                      </tr>
+                    <tr>
+                        <td>A consequence of this resolved lexically is that an arrow function cannot be used as a constructor.</td>
+                        <td>As seen in the previous section, the regular function can easily construct objects.</td>
+                  
+                      </tr>
+                    <tr>
+                        <td>On the other side, no arguments special keyword is defined inside an arrow function.</td>
+                        <td>Inside the body of a regular function, arguments is a special array-like object containing the list of arguments with which the function has been invoked.</td>
+                       
+                      </tr>
+                  </tbody>
+              </table>
+        </div>
+
+        <div class="container mb-3 border p-3">
+            <h4 class="text-primary"> why you do use of template string?</h4>
+            1.Template Literals <br>
+            2.Template Strings  <br>
+            3.String Templates  <br>
+            4.Back-Tics Syntax  <br>
+             <br>Template literals are enclosed by backtick (`) characters instead of double or single quotes.Along with having normal strings, template literals can also contain other parts called placeholders, which are embedded expressions delimited by a dollar sign and curly braces: ${expression}. The strings and placeholders get passed to a function — either a default function, or a function you supply. The default function just performs string interpolation to do substitution of the placeholders and then concatenate the parts into a single string.
+
+        </div>
+
+        <div class="container border mb-4 p-4">
+            <p><span class="text-primary">MAP:</span>  map() creates a new array from calling a function for every array element. map() calls a function once for each element in an array. map() does not execute the function for empty elements. map() does not change the original array,and return the value.</p><br><br>
+
+            <p><span class="text-primary">ForEach:</span> The forEach method is also used to loop through arrays, but it uses a function differently than the classic "for loop". The forEach method passes a callback function for each element of an array together with the following parameters: Current Value (required) - The value of the current array element.</p><br><br>
+
+
+            <p><span class="text-primary">Find:</span> The find() method is an Array. prototype method which takes in a callback function and calls that function for every item within the bound array. When the callback function evaluates to true , the method returns the current item and breaks the loop.</p><br><br>
+
+            <p><span class="text-primary">Filter:</span> The filter() method creates a new array filled with elements that pass a test provided by a function. The filter() method does not execute the function for empty elements. The filter() method does not change the original array.</p>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
