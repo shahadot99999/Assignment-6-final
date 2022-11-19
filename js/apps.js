@@ -103,3 +103,28 @@ const displayNewsCategoriesId = (datas) =>{
     }
     toggleSpinner(false);
 }
+
+// set the model
+const loadModal =async (news_id) =>{
+    try{
+     const url =`https://openapi.programming-hero.com/api/news/${news_id}`;
+     const res = await fetch(url);
+     const data = await res.json();
+     const modalTitle = document.getElementById('exampleModalLabel');
+     modalTitle.innerText = data.data[0].title.length>40? data.data[0].title.slice(0,35) + '...' :data.data[0].title;
+ 
+     const modalBody =document.getElementById('model-body');
+     modalBody.innerHTML = `
+     <p>Rating-badge: ${data.data[0].rating.badge}</p>
+     <p>Rating-Number: ${data.data[0].rating.number}</p>
+     <p>Author Name: ${data.data[0].author.name}</p>
+     <p>Viwe: ${data.data[0].total_view}</p>
+     <p>Unique-ID: ${data.data[0]._id}</p>
+     
+     `;
+    }
+    catch(error){
+     console.log(error);
+    }
+    
+ }
